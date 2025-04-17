@@ -1,29 +1,25 @@
-# teste-de-temperamento-vue
+# Teste de Temperamento
 
-This template should help get you started developing with Vue 3 in Vite.
+Este é um projeto acadêmico em desenvolvimento que consiste em um **quiz interativo** para classificar o temperamento de uma pessoa com base em suas respostas. Os tipos de temperamento considerados são:
 
-## Recommended IDE Setup
+- **Colérico**
+- **Fleumático**
+- **Sanguíneo**
+- **Melancólico**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🎯 Objetivo
 
-## Customize configuration
+O objetivo do projeto é criar uma aplicação web onde o usuário responde a uma série de perguntas e, com base em suas respostas, a aplicação identifica qual é o seu temperamento predominante.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🚧 Status do Projeto
 
-## Project Setup
+⚠️ **Este projeto ainda está em desenvolvimento.**  
+Funcionalidades, design e estrutura podem mudar conforme o progresso da implementação.
 
-```sh
-npm install
-```
+## 🛠️ Tecnologias Utilizadas
 
-### Compile and Hot-Reload for Development
+- **Vue.js** – Framework JavaScript progressivo para construção da interface do quiz.
+- **JavaScript (JS)** – Lógica de manipulação das perguntas, respostas e análise dos resultados.
+- **SASS** – Pré-processador CSS utilizado para organizar e modularizar o estilo da aplicação.
+- **Bootstrap** – Framework para estilização rápida e responsiva.
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
