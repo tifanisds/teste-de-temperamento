@@ -87,12 +87,15 @@
         }
 
         .start-btn {
-          width: 220px;
+          width: 250px;
           height: 50px;
           font-size: 18px;
           font-weight: 800;
           margin-top: 20px;
           margin-bottom: 40px;
+          border-radius: 15px;
+          background-color: #000000;
+          color: #FFF;
         }
       }
 
@@ -135,7 +138,7 @@
             font-weight: 800;
             font-size: 18px;
             width: 300px;
-            height: 40px;
+            height: 50px;
             border-radius: 15px;
           }
 
