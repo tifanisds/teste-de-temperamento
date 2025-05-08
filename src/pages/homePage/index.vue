@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-      <h3>Projeto criado pelas turmas de primeiro e terceiro semestre do curso de Sistemas de informação da faculdade UNIME</h3>
-      <h1>Teste de temperamento</h1>
-      <router-link to="/questions">
-        <button type="button" class="btn btn-primary">Iniciar teste</button>
-      </router-link>
+      <div class="introduction">
+        <img class="logo" src="../../assets/img/Logo.svg" alt="">
+        <h1>Descubra seu Temperamento</h1>
+        <p>Colérico, Melancólico, Sanguíneo ou Fleumático — qual guia suas emoções e decisões?</p>
+      </div>
     </div>
   </template>
   
@@ -12,7 +12,42 @@
   
   </script>
   
-  <style scoped>
-  
+  <style scoped lang="scss">  
+
+    .container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      .introduction {
+      height: 420px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(to top, #7B3EF4, #ebe1ff, #D9D9D900);
+      color: #000000;
+
+      .logo {
+      margin-top: 50px;
+      width: 180px;
+      }
+
+      h1 {
+        margin-top: 70px;
+        font-size: 28px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+      }
+      }
+    }
+
+
   </style>
   
