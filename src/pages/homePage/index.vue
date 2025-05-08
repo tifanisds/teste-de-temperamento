@@ -47,6 +47,14 @@
 
         <button type="button" class="btn start-btn">INICIAR AGORA</button>
       </div>
+
+      <div class="footer">
+        <div class="college-logo">
+          <img src="../../assets/img/unime-logo.png" alt="">
+        </div>
+        <p class="about-project">Projeto universitário realizado pelo primeiro e terceiro semestre do curso de sistemas de informação da faculdade UNIME - 2025</p>
+        <p>© 2025 NeuroQuiz. Todos os direitos reservados.</p>
+      </div>
     </div>
   </template>
   
@@ -123,7 +131,8 @@
           }
 
           .text {
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
             text-align: center;
             font-size: 18px;
             font-weight: 500;
@@ -145,7 +154,7 @@
       }
 
       .benefits-of-test {
-        padding: 50px 0 50px 0;
+        padding: 50px 0 20px 0;
         background-color: #7B3EF4;
         display: flex;
         flex-direction: column;
@@ -188,12 +197,30 @@
             height: 50px;
             font-size: 18px;
             font-weight: 800;
-            margin-top: 20px;
-            margin-bottom: 40px;
+            margin: 20px 0 20px 0;
             border-radius: 15px;
             background-color: #000000;
             color: #FFF;
           }
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .college-logo img {
+          margin: 30px 0 20px 0;
+          width: 140px;
+        }
+
+        .about-project {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #454347;
+        }
       }
     }
 
