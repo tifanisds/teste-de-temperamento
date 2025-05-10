@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container>
     <div class="introduction">
       <img class="logo" src="../../assets/img/Logo.svg" alt="">
       <h1>Descubra seu Temperamento</h1>
@@ -55,7 +55,7 @@
       <p class="about-project">Projeto universitário realizado pelo primeiro e terceiro semestre do curso de sistemas de informação da faculdade UNIME - 2025</p>
       <p>© 2025 NeuroQuiz. Todos os direitos reservados.</p>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -65,7 +65,7 @@
 <style scoped lang="scss">  
   @use "/src/styles/variables.scss" as *;
 
-  .container {
+  v-container {
     margin: 0;
     padding: 0;
 
@@ -117,7 +117,7 @@
       }
 
       .how-it-works {
-        padding: 50px 0 50px 0;
+      padding: 50px 0 50px 0;
         width: 100%; 
         @include column-align-center();
         background-color: #F6F6F6;
