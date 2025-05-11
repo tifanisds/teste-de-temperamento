@@ -15,7 +15,6 @@
                 <input type="text" class="form-control p-2 mt-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Digite seu nome">
             </div>
             <a href="#" class="btn mt-4 fw-bold btn-primary px-5">INICIA QUIZ</a>
-
         </div>
     </div>
 
@@ -32,7 +31,6 @@
 <style scoped lang="scss">
 
 @use "/src/styles/variables.scss" as *;
-    
     .card{
         margin-top: 70px;
         height: auto;
@@ -44,8 +42,8 @@
     
 
         .btn{
-        background-color: #7B3EF4;
-        margin: 0 0 90px 0;
+        background-color: $main-color;
+        margin: 0 0 50px 0;
         border: none;
         }
 
@@ -71,15 +69,15 @@
     .conteiner-symbol{
         position: absolute;
         z-index: 0;
-        left: 70px;
-        top: -10px;
+        left: 4.375rem;
+        top: 0,625rem;
         filter: none; 
     }
     .conteiner-symbol-secundary{
         position: absolute;
         z-index: 0;
-        left: 55rem;
-        top: 21rem;
+        left: 60rem;
+        top: 18rem;
         filter: none; 
     }
 
