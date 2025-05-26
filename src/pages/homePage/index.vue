@@ -5,7 +5,9 @@
       <h1>Descubra seu Temperamento</h1>
       <p>Colérico, Melancólico, Sanguíneo ou Fleumático — qual guia suas emoções e decisões?</p>
 
-      <button type="button" class="btn btn-dark start-btn">COMECE O TESTE</button>
+      <router-link to="/questionsPage">
+        <button type="button" class="btn btn-dark start-btn">COMECE O TESTE</button>
+      </router-link>
     </div>
 
     <div class="call-for-testing">
@@ -17,7 +19,9 @@
         <p class="title">Como funciona?</p>
         <p class="text">Responda a algumas perguntas simples sobre como você reage emocionalmente a certas situações. Ao final, você receberá uma análise do seu temperamento dominante com dicas práticas e insights sobre sua personalidade.</p>
         
-        <button type="button" class="btn call-btn">FAZER O TESTE AGORA</button>
+        <router-link to="questionsPage">
+          <button type="button" class="btn call-btn">FAZER O TESTE AGORA</button>
+        </router-link>
       </div>
     </div>
 
@@ -45,7 +49,9 @@
         </div>
       </div>
 
-      <button type="button" class="btn start-btn">INICIAR AGORA</button>
+      <router-link to="questionsPage">
+        <button type="button" class="btn start-btn">INICIAR AGORA</button>
+      </router-link>
     </div>
 
     <div class="footer">
