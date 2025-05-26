@@ -14,7 +14,9 @@
             <div class="input-group mb-3 w-100">
                 <input type="text" class="form-control p-2 mt-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Digite seu nome">
             </div>
-            <a href="#" class="btn mt-4 fw-bold btn-primary px-5">INICIA QUIZ</a>
+            <router-link to="questions">
+                <a href="#" class="btn mt-4 fw-bold btn-primary px-5">INICIA QUIZ</a>
+            </router-link>
         </div>
     </div>
 
