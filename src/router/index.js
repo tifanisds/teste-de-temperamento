@@ -7,7 +7,7 @@ import resultPage from '../pages/resultPage/index.vue'
 const routes = [
     {path: '/', component: homePage},
     {path: '/questionsPage', component: questionsPage},
-    {path: '/resultPage', component: resultPage},
+    { path: '/resultPage', name: 'result', component: resultPage },
     {path: '/questions', component: questions}
 ];
 

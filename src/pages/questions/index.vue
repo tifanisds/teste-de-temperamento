@@ -83,16 +83,37 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 
+const personalityCount = ref({
+  Fleumatico: 0,
+  Sanguineo: 0,
+  Colerico: 0,
+  Melancolico: 0
+})
+
 const questions = ref([])
 const currentIndex = ref(0)
 const currentQuestion = ref(null)
 const selected = ref(null)
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function navigateToResult() {
+  const result = Object.entries(personalityCount.value).reduce((a, b) => 
+    a[1] > b[1] ? a : b
+  )[0]
+
+  router.push({ name: 'result', query: { result } })
+}
+
 
 
 const progressPercent = computed(() => {
   if (questions.value.length === 0) return 0
   return Math.round((currentIndex.value / questions.value.length) * 100)
 })  
+
+
 
 onMounted(async () => {
   const res = await fetch('http://localhost:3000/questions')
@@ -101,15 +122,30 @@ onMounted(async () => {
   currentQuestion.value = data[currentIndex.value]
 })
 
+
+
 function nextQuestion() {
+  if (selected.value) {
+    const answer = currentQuestion.value.alternatives.find(
+      (alt) => alt.id === selected.value
+    )
+    if (answer) {
+      personalityCount.value[answer.personality]++
+    }
+  }
+
+
+
   selected.value = null
   currentIndex.value++
   if (currentIndex.value < questions.value.length) {
     currentQuestion.value = questions.value[currentIndex.value]
   } else {
-    currentQuestion.value = null
+    // Navega para a página de resultado e envia os dados
+    navigateToResult()
   }
 }
+
 
 function skipQuestion() {
   selected.value = null
