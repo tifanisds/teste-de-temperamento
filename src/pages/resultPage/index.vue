@@ -5,25 +5,29 @@
 
     <div class="main">
         <h1>Seu Resultado</h1>
-        <Fleumatico />
-        <button>REFAZER TESTE</button>
+        <component :is="ResultComponent" />
+        <button @click="$router.push('/questions')">REFAZER TESTE</button>
     </div>
 </template>
 
-<script>
-    import Colerico from '@/components/about-temperaments/colerico.vue';
-    import Melancolico from '@/components/about-temperaments/melancolico.vue';
-    import Sanguineo from '@/components/about-temperaments/sanguineo.vue';
-    import Fleumatico from '@/components/about-temperaments/fleumatico.vue';
+<script setup>
+    import { useRoute } from 'vue-router'
+    import Colerico from '@/components/about-temperaments/colerico.vue'
+    import Melancolico from '@/components/about-temperaments/melancolico.vue'
+    import Sanguineo from '@/components/about-temperaments/sanguineo.vue'
+    import Fleumatico from '@/components/about-temperaments/fleumatico.vue'
 
-    export default {
-    components: {
-        Colerico,
-        Sanguineo,
-        Melancolico,
-        Fleumatico
+    const route = useRoute()
+    const result = route.query.result
+
+    const components = {
+    Fleumático: Fleumatico,
+    Sanguíneo: Sanguineo,
+    Colérico: Colerico,
+    Melancólico: Melancolico
     }
-    };
+
+    const ResultComponent = components[result]
 </script>
 
 <style scoped lang="scss">
