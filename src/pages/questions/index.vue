@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="currentQuestion"
-    class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light text-center p-0"
+    class="container d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light text-center p-0"
   >
  
     <div class="logo-image mt-5">
@@ -14,7 +14,7 @@
       </div>
     </div>
     
-    <div class="container align-items-center d-flex flex-column" style="max-width: 500px;">
+    <div class="container align-items-center d-flex flex-column" style="max-width: 400px;">
       <label
       v-for="alt in currentQuestion.alternatives"
       :key="alt.id"
@@ -31,7 +31,7 @@
       v-model="selected"
       hidden
       />
-      <span class="fw-bold me-2">{{ alt.id }})</span> {{ alt.text }}
+      <span class="fw-bold me-2">{{ alt.id }}</span> {{ alt.text }}
     </label>
   </div>
 
@@ -141,7 +141,6 @@ function nextQuestion() {
   if (currentIndex.value < questions.value.length) {
     currentQuestion.value = questions.value[currentIndex.value]
   } else {
-    // Navega para a página de resultado e envia os dados
     navigateToResult()
   }
 }
@@ -165,39 +164,56 @@ function skipQuestion() {
 .card {
   display: flex;
   border: none;
+  align-items: center;
+
+  &-body-title {
+    display: flex;
+    justify-content: center;
+    width: 380px;
+    background-color: $main-color;
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+  }
 }
 
-.card-body-title {
-  display: flex;
-  justify-content: center;
-  width: 26rem;
-  background-color: $main-color;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.2px;
-}
-.option-box{
-    background-color: $main-title-color;
-    width: 25rem;
-}
+.option-box {
+  background-color: $main-title-color;
+  width: 360px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
 
-
-.option-select{
-  background-color: #7B3EF4 !important;
-  opacity: 60%;
+  &.option-select {
+    background-color: #7B3EF4 !important;
+    opacity: 0.6;
+    color: white;
+  }
 }
 
-.bar-progress{
-  width: 29rem;
+.bar-progress {
+  width: 300px;
   height: auto;
-}
 
-.bg-purple {
-  background-color: #8b4dfd !important;
-}
+  .progress {
+    height: 8px;
+    border-radius: 5px;
+  }
 
-.number{
-  top: -1.3rem;
-  left: 14rem;
+  .progress-bar.bg-purple {
+    background-color: #8b4dfd !important;
+  }
+
+  .number {
+    position: absolute;
+    top: -20px;
+    left: 224px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
 }
 
 @media (max-width: 768px) {
@@ -206,17 +222,22 @@ function skipQuestion() {
   }
 
   .card-body-title {
-    width: 23rem;
+    width: 340px;
   }
 
-  .bar-progress{
-    width: 24rem;
+  .option-box {
+    width: 340px;
   }
 
-  .number{
-    top: -1.3rem;
-    left: 12.01rem;
+  .bar-progress {
+    width: 100%;
+    width: 400px;
+  }
+
+  .bar-progress .number {
+    left: 192px;
   }
 }
+
 </style>
     

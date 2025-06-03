@@ -5,7 +5,7 @@
       <h1>Descubra seu Temperamento</h1>
       <p>Colérico, Melancólico, Sanguíneo ou Fleumático — qual guia suas emoções e decisões?</p>
 
-      <router-link to="/questionsPage">
+      <router-link to="/questions">
         <button type="button" class="btn btn-dark start-btn">COMECE O TESTE</button>
       </router-link>
     </div>
@@ -19,7 +19,7 @@
         <p class="title">Como funciona?</p>
         <p class="text">Responda a algumas perguntas simples sobre como você reage emocionalmente a certas situações. Ao final, você receberá uma análise do seu temperamento dominante com dicas práticas e insights sobre sua personalidade.</p>
         
-        <router-link to="questionsPage">
+        <router-link to="questions">
           <button type="button" class="btn call-btn">FAZER O TESTE AGORA</button>
         </router-link>
       </div>
@@ -49,7 +49,7 @@
         </div>
       </div>
 
-      <router-link to="questionsPage">
+      <router-link to="questions">
         <button type="button" class="btn start-btn">INICIAR AGORA</button>
       </router-link>
     </div>
@@ -59,7 +59,7 @@
         <img src="../../assets/img/unime-logo.png" alt="">
       </div>
       <p class="about-project">Projeto universitário realizado pelo primeiro e terceiro semestre do curso de sistemas de informação da faculdade UNIME - 2025</p>
-      <p>© 2025 NeuroQuiz. Todos os direitos reservados.</p>
+      <p class="copyright">© 2025 NeuroQuiz. Todos os direitos reservados.</p>
     </div>
   </v-container>
 </template>
@@ -94,6 +94,7 @@
       }
 
       p {
+        width: 80%;
         font-size: 18px;
         text-align: center;
         font-weight: 500;
@@ -118,8 +119,13 @@
       margin-top: 70px;
 
       .image {
-        width: 400px;
+        display: flex;
+        justify-content: center;
         margin-bottom: 70px;
+
+        img {
+          width: 340px;
+        }
       }
 
       .how-it-works {
@@ -134,7 +140,7 @@
         }
 
         .text {
-          width: 100%;
+          width: 80%;
           max-width: 700px;
           text-align: center;
           font-size: 18px;
@@ -159,13 +165,14 @@
       @include column-align-center();
 
       .title {
+        text-align: center;
         font-size: 27px;
-        font-weight: 600;
+        font-weight: 700;
         color: #FFF;
       }
 
       .card {
-        width: 400px;
+        width: 350px;
         height: 180px;
         border-radius: 15px;
         background-color: #FFF;
@@ -210,11 +217,17 @@
       }
 
       .about-project {
+        width: 80%;
         text-align: center;
         font-size: 16px;
         font-weight: 400;
         padding-bottom: 20px;
         border-bottom: 1px solid #454347;
+      }
+
+      .copyright {
+        font-size: 13px;
+        text-align: center;
       }
     }
   }
