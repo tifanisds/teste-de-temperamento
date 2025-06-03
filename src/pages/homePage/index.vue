@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <div class="container">
     <div class="introduction">
-      <img class="logo" src="../../assets/img/Logo.svg" alt="">
+      <img class="logo" src="@/assets/img/Logo.svg" alt="">
       <h1>Descubra seu Temperamento</h1>
       <p>Colérico, Melancólico, Sanguíneo ou Fleumático — qual guia suas emoções e decisões?</p>
 
@@ -12,7 +12,7 @@
 
     <div class="call-for-testing">
       <div class="image">
-        <img src="../../assets/img/temperamentos.svg" alt="">
+        <img src="@/assets/img/temperamentos.svg" alt="">
       </div>
 
       <div class="how-it-works">
@@ -56,12 +56,12 @@
 
     <div class="footer">
       <div class="college-logo">
-        <img src="../../assets/img/unime-logo.png" alt="">
+        <img src="@/assets/img/unime-logo.png" alt="">
       </div>
       <p class="about-project">Projeto universitário realizado pelo primeiro e terceiro semestre do curso de sistemas de informação da faculdade UNIME - 2025</p>
       <p class="copyright">© 2025 NeuroQuiz. Todos os direitos reservados.</p>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -71,7 +71,7 @@
 <style scoped lang="scss">  
   @use "/src/styles/variables.scss" as *;
 
-  v-container {
+  .container {
     margin: 0;
     padding: 0;
 
