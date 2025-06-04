@@ -3,6 +3,7 @@
 Este é um projeto acadêmico finalizado que consiste em um **quiz interativo** para identificar o **temperamento predominante** de uma pessoa com base em suas respostas.
 
 
+
 ## 🔍 Tipos de Temperamento
 
 O teste é baseado nos quatro tipos clássicos de temperamento da psicologia:
@@ -11,15 +12,18 @@ O teste é baseado nos quatro tipos clássicos de temperamento da psicologia:
 - 💧 **Fleumático**
 - 🌬️ **Sanguíneo**
 - 🌑 **Melancólico**
-- 
+  
+
 
 ## 🎯 Objetivo
 
 Criar uma aplicação web intuitiva, dinâmica e acessível, onde o usuário responde a uma série de perguntas e recebe, ao final, o resultado com o seu **perfil de temperamento dominante**.
 
 
+
 ## 🧠 Descubra seu temperamento
 https://teste-de-temperamento-tawny.vercel.app/
+
 
 
 ## 🖼️ Preview da Aplicação
@@ -32,6 +36,7 @@ https://teste-de-temperamento-tawny.vercel.app/
 
 ### 📊 Tela de Resultado
 ![Tela de Resultado](./src//assets/img/preview/resultPage.jpg)
+
 
 
 ## 🛠️ Tecnologias Utilizadas
