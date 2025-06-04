@@ -15,6 +15,9 @@ O teste é baseado nos quatro tipos clássicos de temperamento da psicologia:
 
 Criar uma aplicação web intuitiva, dinâmica e acessível, onde o usuário responde a uma série de perguntas e recebe, ao final, o resultado com o seu **perfil de temperamento dominante**.
 
+## 🧠 Descubra seu temperamento
+https://teste-de-temperamento-tawny.vercel.app/
+
 ## 🖼️ Preview da Aplicação
 
 ### 📌 Tela Inicial
