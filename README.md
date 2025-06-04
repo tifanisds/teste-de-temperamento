@@ -1,25 +1,36 @@
-# Teste de Temperamento
+# 🧠 Teste de Temperamento
 
-Este é um projeto acadêmico em desenvolvimento que consiste em um **quiz interativo** para classificar o temperamento de uma pessoa com base em suas respostas. Os tipos de temperamento considerados são:
+Este é um projeto acadêmico finalizado que consiste em um **quiz interativo** para identificar o **temperamento predominante** de uma pessoa com base em suas respostas.
 
-- **Colérico**
-- **Fleumático**
-- **Sanguíneo**
-- **Melancólico**
+## 🔍 Tipos de Temperamento
+
+O teste é baseado nos quatro tipos clássicos de temperamento da psicologia:
+
+- 🔥 **Colérico**
+- 💧 **Fleumático**
+- 🌬️ **Sanguíneo**
+- 🌑 **Melancólico**
 
 ## 🎯 Objetivo
 
-O objetivo do projeto é criar uma aplicação web onde o usuário responde a uma série de perguntas e, com base em suas respostas, a aplicação identifica qual é o seu temperamento predominante.
+Criar uma aplicação web intuitiva, dinâmica e acessível, onde o usuário responde a uma série de perguntas e recebe, ao final, o resultado com o seu **perfil de temperamento dominante**.
 
-## 🚧 Status do Projeto
+## 🖼️ Preview da Aplicação
 
-⚠️ **Este projeto ainda está em desenvolvimento.**  
-Funcionalidades, design e estrutura podem mudar conforme o progresso da implementação.
+### 📌 Tela Inicial
+![Tela Inicial](./src//assets/img/preview/mainPage.jpg)
+
+### ❓ Tela de Perguntas
+![Tela de Perguntas](./src//assets/img/preview/questionsPage.jpg)
+
+### 📊 Tela de Resultado
+![Tela de Resultado](./src//assets/img/preview/resultPage.jpg)
+
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Vue.js** – Framework JavaScript progressivo para construção da interface do quiz.
-- **JavaScript (JS)** – Lógica de manipulação das perguntas, respostas e análise dos resultados.
-- **SASS** – Pré-processador CSS utilizado para organizar e modularizar o estilo da aplicação.
-- **Bootstrap** – Framework para estilização rápida e responsiva.
+- 💚 **Vue.js** – Framework JavaScript progressivo usado para a construção da interface interativa.
+- 📜 **JavaScript (JS)** – Responsável pela lógica do quiz, contagem de respostas e exibição dos resultados.
+- 🎨 **SASS** – Utilizado para estruturar e modularizar os estilos da aplicação com maior organização.
+- ⚙️ **Bootstrap** – Framework CSS para facilitar o layout responsivo e componentes visuais.
 
